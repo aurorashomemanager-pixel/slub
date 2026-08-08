@@ -71,8 +71,8 @@ a{color:inherit}
 .hero h1 span{display:block;color:var(--gold);font-style:italic;font-weight:700;font-size:.85em;text-shadow:0 1px 10px rgba(0,0,0,.4)}
 .date-line{font-size:1.6rem;letter-spacing:.04em;margin-bottom:4px}
 .place-line{
-  font-family:'Jost',sans-serif;
-  font-size:.85rem;letter-spacing:.25em;text-transform:uppercase;
+  font-family:'Cormorant Garamond',serif;font-style:italic;
+  font-size:.95rem;letter-spacing:.25em;text-transform:uppercase;
   color:var(--cream-dim);margin-bottom:38px;
 }
 
@@ -135,7 +135,7 @@ a{color:inherit}
 }
 
 .map-section{max-width:1000px}
-.map-sub{color:var(--ink-soft);margin-bottom:30px}
+.map-sub{color:var(--ink-soft);margin-bottom:30px;font-family:'Cormorant Garamond',serif;font-style:italic}
 #map{
   width:100%;height:420px;border-radius:10px;
   border:0;
@@ -145,10 +145,10 @@ a{color:inherit}
 .gift{background:var(--green-deep);max-width:100%;padding:100px 24px;color:#fdfbf5}
 .gift-card{max-width:620px;margin:0 auto}
 .gift h2{color:#fdfbf5}
-.gift p{line-height:1.8;font-size:1.08rem;color:var(--cream-dim)}
+.gift p{line-height:1.8;font-size:1.08rem;color:var(--cream-dim);font-family:'Cormorant Garamond',serif;font-style:italic}
 
 .rsvp{max-width:760px}
-.rsvp-sub{color:var(--ink-soft);margin-bottom:36px;line-height:1.6}
+.rsvp-sub{color:var(--ink-soft);margin-bottom:36px;line-height:1.6;font-family:'Cormorant Garamond',serif;font-style:italic}
 .rsvp-form-wrap{
   background:#fff;border-radius:10px;overflow:hidden;
   box-shadow:0 10px 30px rgba(51,60,44,.1);
@@ -173,7 +173,7 @@ a{color:inherit}
   text-align:center;padding:50px 24px;
 }
 .footer p{font-family:'Cormorant Garamond',serif;font-size:1.3rem;letter-spacing:.1em}
-.footer-date{margin-top:6px;color:var(--gold);font-size:1rem;letter-spacing:.3em}
+.footer-date{margin-top:6px;color:var(--gold);font-size:1rem;letter-spacing:.3em;font-family:'Cormorant Garamond',serif;font-style:italic}
 
 @media (max-width: 760px){
   .links{display:none}
