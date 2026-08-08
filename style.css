@@ -17,7 +17,7 @@ body{
   overflow-x:hidden;
 }
 h1,h2,h3,.eyebrow,.date-line,.place-line,.cd-num{
-  font-family:'Nanum Pen Script',cursive;
+  font-family:'Caveat',cursive;
 }
 img{max-width:100%;display:block}
 a{color:inherit}
@@ -33,7 +33,7 @@ a{color:inherit}
   display:flex;align-items:center;justify-content:space-between;
   padding:18px 24px;
 }
-.brand{font-family:'Nanum Pen Script',cursive;font-size:1.6rem;letter-spacing:.15em;color:#fff;text-shadow:0 1px 6px rgba(0,0,0,.4)}
+.brand{font-family:'Caveat',cursive;font-size:1.6rem;letter-spacing:.15em;color:#fff;text-shadow:0 1px 6px rgba(0,0,0,.4)}
 .links{display:flex;gap:22px}
 .links a{
   font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;
@@ -57,39 +57,39 @@ a{color:inherit}
 .hero-content{position:relative;z-index:2;color:#fdfbf5;padding:24px;max-width:720px;display:flex;flex-direction:column;align-items:center;gap:22px}
 .hero-frame{
   width:100%;
-  max-width:clamp(150px,26vw,225px);
+  max-width:clamp(175px,29vw,255px);
   margin:0 auto;
 }
 .eyebrow{
-  font-style:italic;font-size:clamp(.62rem,2vw,.78rem);letter-spacing:.02em;
-  color:var(--gold);margin-bottom:8px;
+  font-style:italic;font-size:clamp(.75rem,2.4vw,.95rem);letter-spacing:.02em;
+  color:var(--gold);margin-bottom:6px;
 }
 .hero h1{
-  font-size:clamp(1.5rem,7vw,2.35rem);
+  font-size:clamp(1.9rem,8.5vw,2.9rem);
   font-weight:400;
-  line-height:1.1;
-  margin:0 auto 10px;
+  line-height:1.02;
+  margin:0 auto 8px;
   text-shadow:0 2px 16px rgba(0,0,0,.45);
 }
-.hero h1 span{display:block;color:var(--gold);font-size:.8em;line-height:1}
-.date-line{font-size:clamp(.85rem,3vw,1.05rem);line-height:1.35;letter-spacing:.01em;margin-bottom:6px}
+.hero h1 span{display:block;color:var(--gold);font-size:.7em;line-height:1;margin:-.12em 0}
+.date-line{font-size:clamp(1rem,3.6vw,1.25rem);line-height:1.3;letter-spacing:.01em;margin-bottom:6px}
 .place-line{
   font-family:'Jost',sans-serif;
-  font-size:clamp(.42rem,1.4vw,.55rem);letter-spacing:.12em;text-transform:uppercase;
-  color:var(--cream-dim);margin-bottom:16px;
+  font-size:clamp(.48rem,1.6vw,.62rem);letter-spacing:.12em;text-transform:uppercase;
+  color:var(--cream-dim);margin-bottom:14px;
 }
 
-.countdown{display:grid;grid-template-columns:repeat(4,1fr);gap:3px}
+.countdown{display:grid;grid-template-columns:repeat(4,1fr);gap:4px}
 .cd-box{
   background:rgba(255,255,255,.1);
   border:1px solid rgba(255,255,255,.35);
   backdrop-filter:blur(4px);
   border-radius:4px;
-  padding:4px 1px;
+  padding:5px 1px;
   min-width:0;
 }
-.cd-num{display:block;font-size:clamp(.58rem,2.3vw,.85rem);font-weight:400;line-height:1;font-variant-numeric:tabular-nums}
-.cd-label{display:block;font-size:clamp(.3rem,.9vw,.38rem);letter-spacing:.04em;text-transform:uppercase;margin-top:1px;color:var(--cream-dim)}
+.cd-num{display:block;font-size:clamp(.7rem,2.8vw,1rem);font-weight:400;line-height:1;font-variant-numeric:tabular-nums}
+.cd-label{display:block;font-size:clamp(.34rem,1vw,.42rem);letter-spacing:.04em;text-transform:uppercase;margin-top:1px;color:var(--cream-dim)}
 
 .btn-ghost, .btn-outline{
   display:inline-block;
@@ -121,7 +121,7 @@ a{color:inherit}
 
 .intro-text{
   font-size:1.55rem;line-height:1.7;color:var(--ink-soft);
-  font-family:'Nanum Pen Script',cursive;font-style:normal;
+  font-family:'Caveat',cursive;font-style:normal;
   max-width:640px;margin:0 auto;
 }
 
@@ -176,7 +176,7 @@ a{color:inherit}
 .toast{
   position:fixed;left:50%;bottom:32px;transform:translateX(-50%) translateY(20px);
   background:var(--green-deep);color:#fdfbf5;
-  font-family:'Nanum Pen Script',cursive;font-size:1.4rem;
+  font-family:'Caveat',cursive;font-size:1.4rem;
   padding:16px 30px;border-radius:8px;
   border:1px solid var(--gold);
   box-shadow:0 12px 30px rgba(0,0,0,.25);
@@ -190,7 +190,7 @@ a{color:inherit}
   background:var(--ink);color:var(--cream-dim);
   text-align:center;padding:50px 24px;
 }
-.footer p{font-family:'Nanum Pen Script',cursive;font-size:1.7rem;letter-spacing:.06em}
+.footer p{font-family:'Caveat',cursive;font-size:1.7rem;letter-spacing:.06em}
 .footer-date{margin-top:6px;color:var(--gold);font-size:1rem;letter-spacing:.3em}
 
 @media (max-width: 760px){
