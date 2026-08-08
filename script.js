@@ -38,31 +38,6 @@
   setInterval(tick, 1000);
 })();
 
-// Mapa dojazdu — Gajówka Obręb
-(function () {
-  const coords = [51.9528249, 21.1112503];
-  const map = L.map("map", {
-    scrollWheelZoom: false,
-  }).setView(coords, 14);
-
-  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
-    maxZoom: 19,
-  }).addTo(map);
-
-  const goldIcon = L.divIcon({
-    className: "",
-    html: '<div style="font-size:28px;line-height:1;transform:translateY(-6px)">📍</div>',
-    iconSize: [28, 28],
-    iconAnchor: [14, 28],
-  });
-
-  L.marker(coords, { icon: goldIcon })
-    .addTo(map)
-    .bindPopup("<strong>Gajówka Obręb</strong><br>Karolina &amp; Adam · 19.06.2027")
-    .openPopup();
-})();
-
 // Nawigacja: tło paska nawigacji po scrollu
 (function () {
   const nav = document.querySelector(".topnav");
