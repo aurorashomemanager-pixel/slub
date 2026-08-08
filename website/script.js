@@ -1,0 +1,79 @@
+// Countdown do 19.06.2027 16:00 (czasu polskiego)
+(function () {
+  const weddingDate = new Date("2027-06-19T16:00:00+02:00").getTime();
+
+  const elDays = document.getElementById("cd-days");
+  const elHours = document.getElementById("cd-hours");
+  const elMins = document.getElementById("cd-mins");
+  const elSecs = document.getElementById("cd-secs");
+
+  function pad(n) {
+    return String(n).padStart(2, "0");
+  }
+
+  function tick() {
+    const now = Date.now();
+    const diff = weddingDate - now;
+
+    if (diff <= 0) {
+      elDays.textContent = "00";
+      elHours.textContent = "00";
+      elMins.textContent = "00";
+      elSecs.textContent = "00";
+      return;
+    }
+
+    const days = Math.floor(diff / 86400000);
+    const hours = Math.floor((diff % 86400000) / 3600000);
+    const mins = Math.floor((diff % 3600000) / 60000);
+    const secs = Math.floor((diff % 60000) / 1000);
+
+    elDays.textContent = pad(days);
+    elHours.textContent = pad(hours);
+    elMins.textContent = pad(mins);
+    elSecs.textContent = pad(secs);
+  }
+
+  tick();
+  setInterval(tick, 1000);
+})();
+
+// Mapa dojazdu — Gajówka Obręb
+(function () {
+  const coords = [51.9528249, 21.1112503];
+  const map = L.map("map", {
+    scrollWheelZoom: false,
+  }).setView(coords, 14);
+
+  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+    maxZoom: 19,
+  }).addTo(map);
+
+  const goldIcon = L.divIcon({
+    className: "",
+    html: '<div style="font-size:28px;line-height:1;transform:translateY(-6px)">📍</div>',
+    iconSize: [28, 28],
+    iconAnchor: [14, 28],
+  });
+
+  L.marker(coords, { icon: goldIcon })
+    .addTo(map)
+    .bindPopup("<strong>Gajówka Obręb</strong><br>Karolina &amp; Adam · 19.06.2027")
+    .openPopup();
+})();
+
+// Nawigacja: tło paska nawigacji po scrollu
+(function () {
+  const nav = document.querySelector(".topnav");
+  if (!nav) return;
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 60) {
+      nav.style.background = "rgba(47,43,34,.92)";
+      nav.style.boxShadow = "0 2px 20px rgba(0,0,0,.15)";
+    } else {
+      nav.style.background = "rgba(247,243,234,0)";
+      nav.style.boxShadow = "none";
+    }
+  });
+})();
