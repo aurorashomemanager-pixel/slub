@@ -77,3 +77,24 @@
     }
   });
 })();
+
+// Powiadomienie po wysłaniu formularza RSVP
+// Iframe Google Forms nawiguje wewnętrznie do strony potwierdzenia po submicie,
+// co ponownie odpala zdarzenie "load" — pierwsze ładowanie (formularz) ignorujemy.
+(function () {
+  const iframe = document.getElementById("rsvp-iframe");
+  const toast = document.getElementById("rsvp-toast");
+  if (!iframe || !toast) return;
+
+  let loadCount = 0;
+  let toastTimer = null;
+
+  iframe.addEventListener("load", () => {
+    loadCount += 1;
+    if (loadCount <= 1) return;
+
+    toast.classList.add("show");
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => toast.classList.remove("show"), 5000);
+  });
+})();
