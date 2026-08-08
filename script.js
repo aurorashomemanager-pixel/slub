@@ -73,3 +73,20 @@
     toastTimer = setTimeout(() => toast.classList.remove("show"), 5000);
   });
 })();
+
+// Link "Dodaj do kalendarza Google"
+(function () {
+  const link = document.getElementById("gcal-link");
+  if (!link) return;
+
+  const params = new URLSearchParams({
+    action: "TEMPLATE",
+    text: "Ślub Karoliny i Adama",
+    dates: "20270619T160000/20270619T230000",
+    details: "Zapraszamy na nasz ślub! Ceremonia i przyjęcie odbędą się w Gajówce Obręb.",
+    location: "Gajówka Obręb",
+    ctz: "Europe/Warsaw",
+  });
+
+  link.href = "https://calendar.google.com/calendar/render?" + params.toString();
+})();
