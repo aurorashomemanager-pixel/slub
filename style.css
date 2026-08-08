@@ -58,8 +58,8 @@ a{color:inherit}
 .heart-carving{
   position:absolute;
   left:15%;
-  top:47%;
-  width:clamp(38px,7vw,90px);
+  top:40%;
+  width:clamp(46px,8.5vw,105px);
   height:auto;
   transform:translate(-50%,-50%) rotate(-3deg);
   z-index:1;
