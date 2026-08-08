@@ -145,7 +145,7 @@ a{color:inherit}
 .gift{background:var(--green-deep);max-width:100%;padding:100px 24px;color:#fdfbf5}
 .gift-card{max-width:620px;margin:0 auto}
 .gift h2{color:#fdfbf5}
-.gift p{line-height:1.8;font-size:1.08rem;color:var(--cream-dim);font-family:'Cormorant Garamond',serif;font-style:italic}
+.gift p{line-height:1.75;font-size:1.4rem;color:var(--cream-dim);font-family:'Cormorant Garamond',serif;font-style:italic}
 
 .rsvp{max-width:760px}
 .rsvp-sub{color:var(--ink-soft);margin-bottom:36px;line-height:1.6;font-family:'Cormorant Garamond',serif;font-style:italic}
