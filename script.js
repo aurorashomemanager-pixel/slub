@@ -82,7 +82,7 @@
   const params = new URLSearchParams({
     action: "TEMPLATE",
     text: "Ślub Karoliny i Adama",
-    dates: "20270619T160000/20270619T230000",
+    dates: "20270619T160000/20270620T000000",
     details: "Zapraszamy na nasz ślub! Ceremonia i przyjęcie odbędą się w Gajówce Obręb.",
     location: "Gajówka Obręb",
     ctz: "Europe/Warsaw",
