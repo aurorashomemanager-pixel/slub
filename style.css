@@ -159,6 +159,12 @@ a{color:inherit}
 .gift h2{color:#fdfbf5}
 .gift p{line-height:1.75;font-size:1.25rem;color:var(--cream-dim);font-family:'Cormorant Garamond',serif;font-style:italic}
 
+.gallery{max-width:640px}
+.gallery-text{
+  color:var(--ink-soft);margin-bottom:30px;line-height:1.75;font-size:1.25rem;
+  font-family:'Cormorant Garamond',serif;font-style:italic;
+}
+
 .rsvp{max-width:760px}
 .rsvp-sub{color:var(--ink-soft);margin-bottom:36px;line-height:1.75;font-size:1.25rem;font-family:'Cormorant Garamond',serif;font-style:italic}
 .rsvp-form-wrap{
