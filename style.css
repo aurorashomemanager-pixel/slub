@@ -103,16 +103,15 @@ a{color:inherit}
 
 .cal-link{
   display:inline-block;
-  margin-top:22px;
+  margin-bottom:30px;
   font-family:'Jost',sans-serif;
-  font-size:.8rem;letter-spacing:.06em;
-  color:var(--green-deep);
+  font-size:.9rem;font-weight:500;letter-spacing:.06em;
+  color:#a4772f;
   text-decoration:underline;
   text-underline-offset:3px;
-  opacity:.8;
-  transition:opacity .2s, color .2s;
+  transition:color .2s;
 }
-.cal-link:hover{opacity:1;color:var(--gold)}
+.cal-link:hover{color:var(--green-deep)}
 
 .scroll-hint{
   position:absolute;bottom:26px;left:50%;transform:translateX(-50%);
