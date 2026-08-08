@@ -56,8 +56,9 @@ a{color:inherit}
 }
 .hero-content{position:relative;z-index:2;color:#fdfbf5;padding:24px;max-width:720px}
 .eyebrow{
-  font-style:italic;font-size:1.15rem;letter-spacing:.06em;
+  font-style:italic;font-size:1.5rem;font-weight:600;letter-spacing:.06em;
   color:var(--gold);margin-bottom:10px;
+  text-shadow:0 1px 8px rgba(0,0,0,.4);
 }
 .hero h1{
   font-size:clamp(2.2rem,7vw,3.6rem);
@@ -67,7 +68,7 @@ a{color:inherit}
   margin:0 auto 18px;
   text-shadow:0 2px 20px rgba(0,0,0,.35);
 }
-.hero h1 span{display:block;color:var(--gold);font-style:italic;font-size:.7em}
+.hero h1 span{display:block;color:var(--gold);font-style:italic;font-weight:700;font-size:.85em;text-shadow:0 1px 10px rgba(0,0,0,.4)}
 .date-line{font-size:1.6rem;letter-spacing:.04em;margin-bottom:4px}
 .place-line{
   font-family:'Jost',sans-serif;
@@ -126,13 +127,10 @@ a{color:inherit}
 
 .photo-strip.alt figure{
   max-height:none;
-  background:var(--green-deep);
 }
 .photo-strip.alt img{
-  height:auto;max-height:92vh;
-  width:auto;max-width:100%;
-  object-fit:contain;
-  margin:0 auto;
+  width:100%;height:auto;
+  display:block;
 }
 
 .map-section{max-width:1000px}
