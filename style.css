@@ -103,15 +103,16 @@ a{color:inherit}
 
 .cal-link{
   display:inline-block;
+  margin-top:22px;
   font-family:'Jost',sans-serif;
-  font-size:.75rem;letter-spacing:.06em;
-  color:var(--cream-dim);
+  font-size:.8rem;letter-spacing:.06em;
+  color:var(--green-deep);
   text-decoration:underline;
   text-underline-offset:3px;
-  opacity:.85;
+  opacity:.8;
   transition:opacity .2s, color .2s;
 }
-.cal-link:hover{opacity:1;color:#fdfbf5}
+.cal-link:hover{opacity:1;color:var(--gold)}
 
 .scroll-hint{
   position:absolute;bottom:26px;left:50%;transform:translateX(-50%);
