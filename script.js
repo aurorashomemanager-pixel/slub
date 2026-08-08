@@ -83,7 +83,15 @@
     action: "TEMPLATE",
     text: "Ślub Karoliny i Adama",
     dates: "20270619T160000/20270620T000000",
-    details: "Zapraszamy na nasz ślub! Ceremonia i przyjęcie odbędą się w Gajówce Obręb.",
+    details:
+      "Zapraszamy na nasz ślub! Ceremonia i przyjęcie odbędą się w Gajówce Obręb.\n\n" +
+      "Rozkład jazdy:\n" +
+      "15:30 - otwarcie bram\n" +
+      "16:00 - ceremonia\n" +
+      "16:30 - toast, kawa, słodki bufet\n" +
+      "17:00 - odpalamy parkiet\n" +
+      "19:00 - obiadokolacja\n" +
+      "24:00 - Kopciuszek gubi pantofelek, dynia czeka, ostatni gasi światło",
     location: "Gajówka Obręb",
     ctz: "Europe/Warsaw",
   });
